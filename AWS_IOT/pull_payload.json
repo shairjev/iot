@@ -1,0 +1,12 @@
+var result = msg.payload; 
+if(result.status=="on")
+{
+    msg.payload=1;
+}
+else
+{
+    msg.payload=0;
+
+}
+
+return msg;
