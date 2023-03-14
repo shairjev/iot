@@ -65,7 +65,7 @@ void loop(){
             client.println("<svg width=\"300\" height=\"80\"><text fill=\"#00bfbf\" font-family=\"serif\" font-size=\"24\" id=\"svg_1\" stroke=\"#000000\" text-anchor=\"middle\" transform=\"matrix(1.35388 0 0 1.42308 -6.66283 -8.67308)\" x=\"86.5\" xml:space=\"preserve\" y=\"41.5\">Jeevan IoT</text></svg>");
           
             // Web Page Heading
-            client.println("<body><h1>Hi Adhiyamaan</h1>");
+            client.println("<body><h1>Hi Itians</h1>");
             client.println("<p>LED1_State: " + LED1State + "</p>");
             // If the LED1State is off, it displays the ON button       
             if (LED1State=="off") {
