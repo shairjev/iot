@@ -1,0 +1,12 @@
+//made with love by JEEVA
+var SS = SpreadsheetApp.openById('1jibsUVvq3u5CHhDlPH0pNkjtqNfFu_YFeVn6IaCNW5I');
+var sheet = SS.getSheetByName('Sheet1');
+
+
+function doGet(e){
+  var read = e.parameter.read;
+  if (read !== undefined){
+   return ContentService.createTextOutput(sheet.getRange(read).getValue());
+ }
+  return ContentService.createTextOutput("No value passed as argument to script Url.");
+}
